@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#1e1e1e"/>
+  
+  <!-- Top Navigation Bar -->
+  <rect x="0" y="0" width="1200" height="60" fill="#2d2d2d"/>
+  <text x="20" y="35" fill="white" font-family="Arial" font-size="18" font-weight="bold">Grafana</text>
+  
+  <!-- Search Bar -->
+  <rect x="400" y="15" width="300" height="30" fill="#3d3d3d" rx="5"/>
+  <text x="420" y="35" fill="#999" font-family="Arial" font-size="14">Search...</text>
+  <text x="680" y="35" fill="#666" font-family="Arial" font-size="12">ctrl+k</text>
+  
+  <!-- Right Icons -->
+  <circle cx="1000" cy="30" r="15" fill="#4CAF50"/>
+  <text x="995" y="35" fill="white" font-family="Arial" font-size="12">U</text>
+  
+  <!-- New Button -->
+  <rect x="1050" y="15" width="80" height="30" fill="#0066cc" rx="5"/>
+  <text x="1070" y="35" fill="white" font-family="Arial" font-size="14">New ▼</text>
+  
+  <!-- Left Sidebar -->
+  <rect x="0" y="60" width="250" height="740" fill="#2d2d2d"/>
+  
+  <!-- Navigation Items -->
+  <g fill="white" font-family="Arial" font-size="14">
+    <text x="20" y="100">🏠 Home</text>
+    <text x="20" y="130">🔖 Bookmarks</text>
+    <text x="20" y="160">⭐ Starred</text>
+    <text x="20" y="190" fill="#4CAF50" font-weight="bold">📊 Dashboards ▼</text>
+    <text x="20" y="220">🧭 Explore</text>
+    <text x="20" y="250">🎤 Drilldown</text>
+    <text x="20" y="280">🔔 Alerting</text>
+    <text x="20" y="310">🔌 Connections ▼</text>
+    <text x="20" y="340">⚙️ Administration ▼</text>
+  </g>
+  
+  <!-- Main Content Area -->
+  <rect x="250" y="60" width="950" height="740" fill="#1e1e1e"/>
+  
+  <!-- Breadcrumbs -->
+  <text x="270" y="90" fill="#999" font-family="Arial" font-size="14">Home > Dashboards</text>
+  
+  <!-- Page Title -->
+  <text x="270" y="120" fill="white" font-family="Arial" font-size="24" font-weight="bold">Dashboards</text>
+  <text x="270" y="145" fill="#999" font-family="Arial" font-size="14">Create and manage dashboards to visualize your data</text>
+  
+  <!-- Search and Filter Bar -->
+  <rect x="270" y="170" width="400" height="35" fill="#3d3d3d" rx="5"/>
+  <text x="290" y="192" fill="#999" font-family="Arial" font-size="14">Search for dashboards and folders</text>
+  
+  <!-- Filter Dropdown -->
+  <rect x="690" y="170" width="120" height="35" fill="#3d3d3d" rx="5"/>
+  <text x="710" y="192" fill="white" font-family="Arial" font-size="14">Filter by tag ▼</text>
+  
+  <!-- Starred Checkbox -->
+  <rect x="830" y="175" width="15" height="15" fill="#3d3d3d" stroke="#666"/>
+  <text x="855" y="187" fill="white" font-family="Arial" font-size="14">Starred</text>
+  
+  <!-- View Mode Icons -->
+  <rect x="950" y="170" width="35" height="35" fill="#4CAF50" rx="5"/>
+  <text x="960" y="192" fill="white" font-family="Arial" font-size="16">📋</text>
+  
+  <rect x="995" y="170" width="35" height="35" fill="#3d3d3d" rx="5"/>
+  <text x="1005" y="192" fill="white" font-family="Arial" font-size="16">📁</text>
+  
+  <rect x="1040" y="170" width="35" height="35" fill="#3d3d3d" rx="5"/>
+  <text x="1050" y="192" fill="white" font-family="Arial" font-size="16">⊞</text>
+  
+  <!-- Sort Dropdown -->
+  <rect x="1095" y="170" width="80" height="35" fill="#3d3d3d" rx="5"/>
+  <text x="1105" y="192" fill="white" font-family="Arial" font-size="14">Sort ▼</text>
+  
+  <!-- Dashboard List -->
+  <rect x="270" y="220" width="900" height="50" fill="#2d2d2d" rx="5"/>
+  <rect x="280" y="230" width="15" height="15" fill="#3d3d3d" stroke="#666"/>
+  <text x="310" y="242" fill="white" font-family="Arial" font-size="14">⊞</text>
+  <text x="335" y="242" fill="white" font-family="Arial" font-size="14">BenevoClic Alerts Dashboard</text>
+  <text x="700" y="242" fill="#4CAF50" font-family="Arial" font-size="12">alerts</text>
+  <text x="750" y="242" fill="#9C27B0" font-family="Arial" font-size="12">benevoclic</text>
+  <text x="820" y="242" fill="#F44336" font-family="Arial" font-size="12">monitoring</text>
+  
+  <rect x="270" y="280" width="900" height="50" fill="#2d2d2d" rx="5"/>
+  <rect x="280" y="290" width="15" height="15" fill="#3d3d3d" stroke="#666"/>
+  <text x="310" y="302" fill="white" font-family="Arial" font-size="14">⊞</text>
+  <text x="335" y="302" fill="white" font-family="Arial" font-size="14">BenevoClic API Metrics Dashboard</text>
+  <text x="700" y="302" fill="#2196F3" font-family="Arial" font-size="12">api</text>
+  <text x="730" y="302" fill="#9C27B0" font-family="Arial" font-size="12">benevoclic</text>
+  <text x="800" y="302" fill="#00BCD4" font-family="Arial" font-size="12">metrics</text>
+  
+  <rect x="270" y="340" width="900" height="50" fill="#2d2d2d" rx="5"/>
+  <rect x="280" y="350" width="15" height="15" fill="#3d3d3d" stroke="#666"/>
+  <text x="310" y="362" fill="white" font-family="Arial" font-size="14">⊞</text>
+  <text x="335" y="362" fill="white" font-family="Arial" font-size="14">BenevoClic Comprehensive Dashboard</text>
+  <text x="700" y="362" fill="#2196F3" font-family="Arial" font-size="12">api</text>
+  <text x="730" y="362" fill="#9C27B0" font-family="Arial" font-size="12">benevoclic</text>
+  <text x="800" y="362" fill="#9C27B0" font-family="Arial" font-size="12">comprehensive</text>
+  <text x="890" y="362" fill="#F44336" font-family="Arial" font-size="12">monitoring</text>
+  
+  <rect x="270" y="400" width="900" height="50" fill="#2d2d2d" rx="5"/>
+  <rect x="280" y="410" width="15" height="15" fill="#3d3d3d" stroke="#666"/>
+  <text x="310" y="422" fill="white" font-family="Arial" font-size="14">⊞</text>
+  <text x="335" y="422" fill="white" font-family="Arial" font-size="14">BenevoClic Simple Working Dashboard</text>
+  <text x="700" y="422" fill="#2196F3" font-family="Arial" font-size="12">api</text>
+  <text x="730" y="422" fill="#9C27B0" font-family="Arial" font-size="12">benevoclic</text>
+  <text x="800" y="422" fill="#F44336" font-family="Arial" font-size="12">monitoring</text>
+</svg>

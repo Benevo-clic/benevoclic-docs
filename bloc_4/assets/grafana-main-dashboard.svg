@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="1000" fill="#1e1e1e"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1400" height="60" fill="#2d2d2d"/>
+  <text x="20" y="35" fill="white" font-family="Arial" font-size="18" font-weight="bold">Grafana</text>
+  <text x="1200" y="35" fill="white" font-family="Arial" font-size="14">2025-08-16 17:40:56 to 2025-08-16 21:40:56</text>
+  
+  <!-- Time Range Selector -->
+  <rect x="800" y="15" width="200" height="30" fill="#3d3d3d" rx="5"/>
+  <text x="820" y="35" fill="white" font-family="Arial" font-size="14">Last 4 hours ▼</text>
+  
+  <!-- Dashboard Grid -->
+  
+  <!-- Panel 1: Service Status -->
+  <rect x="20" y="80" width="680" height="300" fill="#2d2d2d" rx="5" stroke="#444"/>
+  <text x="40" y="110" fill="white" font-family="Arial" font-size="16" font-weight="bold">Statut des services</text>
+  
+  <!-- Graph Background -->
+  <rect x="40" y="130" width="640" height="230" fill="#1e1e1e" rx="3"/>
+  
+  <!-- Y-axis labels -->
+  <text x="35" y="140" fill="#999" font-family="Arial" font-size="10">2</text>
+  <text x="35" y="180" fill="#999" font-family="Arial" font-size="10">1</text>
+  <text x="35" y="220" fill="#999" font-family="Arial" font-size="10">0</text>
+  
+  <!-- X-axis labels -->
+  <text x="60" y="370" fill="#999" font-family="Arial" font-size="10">18:00</text>
+  <text x="200" y="370" fill="#999" font-family="Arial" font-size="10">19:00</text>
+  <text x="340" y="370" fill="#999" font-family="Arial" font-size="10">20:00</text>
+  <text x="480" y="370" fill="#999" font-family="Arial" font-size="10">21:00</text>
+  <text x="620" y="370" fill="#999" font-family="Arial" font-size="10">21:30</text>
+  
+  <!-- Service Status Lines -->
+  <polyline points="60,220 680,220" stroke="#4CAF50" stroke-width="3" fill="none"/>
+  <text x="690" y="225" fill="#4CAF50" font-family="Arial" font-size="10">benevoclic-api - benevoclic-api:3000</text>
+  
+  <polyline points="60,240 680,240" stroke="#FFC107" stroke-width="1" fill="none" stroke-dasharray="5,5"/>
+  <text x="690" y="245" fill="#FFC107" font-family="Arial" font-size="10">prometheus - localhost:9090</text>
+  
+  <polyline points="60,260 680,260" stroke="#2196F3" stroke-width="1" fill="none" stroke-dasharray="5,5"/>
+  <text x="690" y="265" fill="#2196F3" font-family="Arial" font-size="10">node-exporter - node-exporter:9100</text>
+  
+  <!-- Panel 2: HTTP Requests -->
+  <rect x="720" y="80" width="680" height="300" fill="#2d2d2d" rx="5" stroke="#444"/>
+  <text x="740" y="110" fill="white" font-family="Arial" font-size="16" font-weight="bold">Requêtes HTTP par seconde</text>
+  
+  <!-- Graph Background -->
+  <rect x="740" y="130" width="640" height="230" fill="#1e1e1e" rx="3"/>
+  
+  <!-- Y-axis labels -->
+  <text x="735" y="140" fill="#999" font-family="Arial" font-size="10">0.06</text>
+  <text x="735" y="180" fill="#999" font-family="Arial" font-size="10">0.03</text>
+  <text x="735" y="220" fill="#999" font-family="Arial" font-size="10">0</text>
+  
+  <!-- HTTP Request Lines -->
+  <polyline points="760,200 800,190 840,195 880,185 920,180 960,175 1000,170 1040,175 1080,180 1120,185 1160,190 1200,185 1240,180 1280,175 1320,180 1360,185 1400,180" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <text x="1410" y="185" fill="#4CAF50" font-family="Arial" font-size="10">prometheus - 200</text>
+  
+  <!-- Panel 3: Memory Usage -->
+  <rect x="20" y="400" width="680" height="300" fill="#2d2d2d" rx="5" stroke="#444"/>
+  <text x="40" y="430" fill="white" font-family="Arial" font-size="16" font-weight="bold">Utilisation mémoire</text>
+  
+  <!-- Graph Background -->
+  <rect x="40" y="450" width="640" height="230" fill="#1e1e1e" rx="3"/>
+  
+  <!-- Y-axis labels -->
+  <text x="35" y="460" fill="#999" font-family="Arial" font-size="10">160</text>
+  <text x="35" y="520" fill="#999" font-family="Arial" font-size="10">80</text>
+  <text x="35" y="580" fill="#999" font-family="Arial" font-size="10">0</text>
+  
+  <!-- Memory Usage Lines -->
+  <polyline points="60,520 100,515 140,510 180,515 220,520 260,515 300,510 340,515 380,520 420,515 460,510 500,515 540,520 580,515 620,510 660,515 680,510" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <text x="690" y="515" fill="#4CAF50" font-family="Arial" font-size="10">benevoclic-api - Mémoire</text>
+  
+  <polyline points="60,580 100,580 140,580 180,580 220,580 260,580 300,580 340,580 380,580 420,580 460,580 500,580 540,580 580,580 620,580 660,580 680,580" stroke="#FFC107" stroke-width="2" fill="none"/>
+  <text x="690" y="585" fill="#FFC107" font-family="Arial" font-size="10">prometheus - Mémoire</text>
+  
+  <!-- Memory Spike -->
+  <polyline points="300,580 320,520 340,580" stroke="#FFC107" stroke-width="2" fill="none"/>
+  
+  <!-- Panel 4: CPU Usage -->
+  <rect x="720" y="400" width="680" height="300" fill="#2d2d2d" rx="5" stroke="#444"/>
+  <text x="740" y="430" fill="white" font-family="Arial" font-size="16" font-weight="bold">Utilisation CPU</text>
+  
+  <!-- Graph Background -->
+  <rect x="740" y="450" width="640" height="230" fill="#1e1e1e" rx="3"/>
+  
+  <!-- Y-axis labels -->
+  <text x="735" y="460" fill="#999" font-family="Arial" font-size="10">3%</text>
+  <text x="735" y="520" fill="#999" font-family="Arial" font-size="10">1.5%</text>
+  <text x="735" y="580" fill="#999" font-family="Arial" font-size="10">0%</text>
+  
+  <!-- CPU Usage Lines -->
+  <polyline points="760,520 800,510 840,515 880,505 920,500 960,495 1000,490 1040,495 1080,500 1120,505 1160,510 1200,505 1240,500 1280,495 1320,500 1360,505 1400,500" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <text x="1410" y="505" fill="#4CAF50" font-family="Arial" font-size="10">benevoclic-api - CPU</text>
+  
+  <polyline points="760,580 800,580 840,580 880,580 920,580 960,580 1000,580 1040,580 1080,580 1120,580 1160,580 1200,580 1240,580 1280,580 1320,580 1360,580 1400,580" stroke="#FFC107" stroke-width="1" fill="none" stroke-dasharray="5,5"/>
+  <text x="1410" y="585" fill="#FFC107" font-family="Arial" font-size="10">prometheus - CPU</text>
+  
+  <polyline points="760,580 800,580 840,580 880,580 920,580 960,580 1000,580 1040,580 1080,580 1120,580 1160,580 1200,580 1240,580 1280,580 1320,580 1360,580 1400,580" stroke="#2196F3" stroke-width="1" fill="none" stroke-dasharray="5,5"/>
+  <text x="1410" y="595" fill="#2196F3" font-family="Arial" font-size="10">node-exporter - CPU</text>
+  
+  <!-- Panel 5: Virtual Memory -->
+  <rect x="20" y="720" width="680" height="250" fill="#2d2d2d" rx="5" stroke="#444"/>
+  <text x="40" y="750" fill="white" font-family="Arial" font-size="16" font-weight="bold">Mémoire virtuelle</text>
+  
+  <!-- Graph Background -->
+  <rect x="40" y="770" width="640" height="180" fill="#1e1e1e" rx="3"/>
+  
+  <!-- Y-axis labels -->
+  <text x="35" y="780" fill="#999" font-family="Arial" font-size="10">12</text>
+  <text x="35" y="820" fill="#999" font-family="Arial" font-size="10">9</text>
+  <text x="35" y="860" fill="#999" font-family="Arial" font-size="10">6</text>
+  
+  <!-- Virtual Memory Line -->
+  <polyline points="60,820 680,820" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <text x="690" y="825" fill="#4CAF50" font-family="Arial" font-size="10">Mémoire virtuelle (GiB)</text>
+  
+  <!-- Panel 6: Node.js Heap -->
+  <rect x="720" y="720" width="680" height="250" fill="#2d2d2d" rx="5" stroke="#444"/>
+  <text x="740" y="750" fill="white" font-family="Arial" font-size="16" font-weight="bold">Heap Node.js</text>
+  
+  <!-- Graph Background -->
+  <rect x="740" y="770" width="640" height="180" fill="#1e1e1e" rx="3"/>
+  
+  <!-- Y-axis labels -->
+  <text x="735" y="780" fill="#999" font-family="Arial" font-size="10">88</text>
+  <text x="735" y="820" fill="#999" font-family="Arial" font-size="10">80</text>
+  <text x="735" y="860" fill="#999" font-family="Arial" font-size="10">72</text>
+  
+  <!-- Heap Memory Line (spiky) -->
+  <polyline points="760,820 800,810 840,830 880,800 920,840 960,790 1000,850 1040,800 1080,830 1120,810 1160,840 1200,800 1240,830 1280,810 1320,840 1360,800 1400,820" stroke="#FFC107" stroke-width="2" fill="none"/>
+  <text x="1410" y="825" fill="#FFC107" font-family="Arial" font-size="10">Heap Node.js (MiB)</text>
+  
+  <!-- Legend -->
+  <rect x="20" y="980" width="1380" height="20" fill="#2d2d2d" rx="3"/>
+  <text x="40" y="995" fill="white" font-family="Arial" font-size="12">Monitoring BenevoClic - Période: 4 heures | Services: benevoclic-api, prometheus, node-exporter</text>
+</svg>
